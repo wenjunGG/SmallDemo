@@ -32,7 +32,7 @@
 
             //-----------------    
 
-            //设置 cipher 格式 AES-128-CBC    
+            //set cipher format AES-128-CBC    
 
             rijalg.KeySize = 128;
 
@@ -46,7 +46,7 @@
 
             byte[] encryptedData = Convert.FromBase64String(encryptedDataStr);
 
-            //解密    
+            //Decrypt   
 
             ICryptoTransform decryptor = rijalg.CreateDecryptor(rijalg.Key, rijalg.IV);
 
